@@ -1,1 +1,3 @@
-# cristinalunaj.github.io
+# HRConfiguration
+
+Simple form to receive configuration data

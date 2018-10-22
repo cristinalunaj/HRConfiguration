@@ -29,6 +29,15 @@ font-variant:normal}
     right: 45px;
 }
 
+.item-select{
+	border:0;
+	background-color:transparent;
+	font-size:13px;
+	width:100%;
+	box-sizing:border-box;
+	padding: 0px 12px 25px 43px;
+}
+
 a{
 	color:#ff4700;
 	text-decoration:none

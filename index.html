@@ -30,10 +30,12 @@
   </div>
 
   <div class="item-container">
-    <div class="item-container-header">Sampling Frequency HR data</div>
+    <div class="item-container-header">Sending Data Frequency (in seconds)</div>
     <div class="item-container-content">
       <label class="item">
-        <input type="text" class="item-input" name="samplingFrequencyHR" id="samplingFrequencyHR">
+        <label class="item">
+        <input type="text" class="item-input" name="sendingFrequency" id="sendingFrequency">
+      </label>
       </label>
     </div>
   </div>
@@ -81,7 +83,7 @@
     var options = {
       "url": document.getElementById("url").value,
       "dataField": document.getElementById("dataField").value,
-      "samplingFrequencyHR":document.getElementById("samplingFrequencyHR").value,
+      "sendingFrequency":document.getElementById("sendingFrequency").value,
     }
     console.log("returning " + JSON.stringify(options));
     document.location = return_to + encodeURIComponent(JSON.stringify(options));
@@ -96,7 +98,7 @@
 
     document.getElementById("url").value = getQueryParam("url", "");
     document.getElementById("dataField").value = getQueryParam("data_field", "");
-    document.getElementById("samplingFrequencyHR").value = getQueryParam("samplingFrequencyHR", "60");
+    document.getElementById("sendingFrequency").value = getQueryParam("sendingFrequency", 60);
 
   </script>
 </body>

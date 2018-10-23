@@ -15,7 +15,7 @@
     <div class="item-container-header">Endpoint URL</div>
     <div class="item-container-content">
       <label class="item">
-        <input type="text" class="item-input" name="url" id="url" placeholder="http://example.com/post/path">
+        <input type="text" class="item-input" name="url" id="url" placeholder="http://example.com/post/">
       </label>
     </div>
   </div>
@@ -24,7 +24,7 @@
     <div class="item-container-header">Data Field Name</div>
     <div class="item-container-content">
       <label class="item">
-        <input type="text" class="item-input" name="dataField" id="dataField">
+        <input type="text" class="item-input" name="dataField" id="dataField" placeholder="data">
       </label>
     </div>
   </div>
@@ -33,7 +33,7 @@
     <div class="item-container-header">Sending Data Frequency (in seconds)</div>
     <div class="item-container-content">
       <label class="item">
-        <input type="text" class="item-input" name="sendingFrequency" id="sendingFrequency">
+        <input type="text" class="item-input" name="sendingFrequency" id="sendingFrequency" placeholder="60">
       </label>
     </div>
   </div>
@@ -96,7 +96,7 @@
 
     document.getElementById("url").value = getQueryParam("url", "");
     document.getElementById("dataField").value = getQueryParam("data_field", "");
-    document.getElementById("sendingFrequency").value = getQueryParam("sending_frequency", 60);
+    document.getElementById("sendingFrequency").value = getQueryParam("sending_frequency", "");
 
   </script>
 </body>

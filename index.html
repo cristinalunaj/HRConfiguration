@@ -30,6 +30,15 @@
   </div>
 
   <div class="item-container">
+    <div class="item-container-header">Employee alias</div>
+    <div class="item-container-content">
+      <label class="item">
+        <input type="text" class="item-input" name="employeeAlias" id="employeeAlias" placeholder="userx">
+      </label>
+    </div>
+  </div>
+
+  <div class="item-container">
     <div class="item-container-header">Sending Data Frequency (in seconds)</div>
     <div class="item-container-content">
       <label class="item">
@@ -81,7 +90,8 @@
     var options = {
       "url": document.getElementById("url").value,
       "dataField": document.getElementById("dataField").value,
-      "sendingFrequency":document.getElementById("sendingFrequency").value
+      "sendingFrequency":document.getElementById("sendingFrequency").value,
+        "employeeAlias":document.getElementById("employeeAlias").value
     };
     console.log("returning " + JSON.stringify(options));
     document.location = return_to + encodeURIComponent(JSON.stringify(options));
@@ -97,6 +107,7 @@
     document.getElementById("url").value = getQueryParam("url", "");
     document.getElementById("dataField").value = getQueryParam("data_field", "");
     document.getElementById("sendingFrequency").value = getQueryParam("sending_frequency", "60");
+    document.getElementById("employeeAlias").value = getQueryParam("employee_alias", "");
 
   </script>
 </body>
